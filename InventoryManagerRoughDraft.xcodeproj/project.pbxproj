@@ -13,6 +13,7 @@
 		DDB38F8C23D0E6FB002BCA1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB38F8A23D0E6FB002BCA1C /* Main.storyboard */; };
 		DDB38F9823D0E6FB002BCA1C /* InventoryManagerRoughDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB38F9723D0E6FB002BCA1C /* InventoryManagerRoughDraftTests.swift */; };
 		DDB38FA323D0E6FB002BCA1C /* InventoryManagerRoughDraftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB38FA223D0E6FB002BCA1C /* InventoryManagerRoughDraftUITests.swift */; };
+		DDB38FB523D112E0002BCA1C /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB38FB423D112E0002BCA1C /* SecondController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		DDB38F9E23D0E6FB002BCA1C /* InventoryManagerRoughDraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryManagerRoughDraftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB38FA223D0E6FB002BCA1C /* InventoryManagerRoughDraftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManagerRoughDraftUITests.swift; sourceTree = "<group>"; };
 		DDB38FA423D0E6FB002BCA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB38FB423D112E0002BCA1C /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +100,11 @@
 			children = (
 				DDB38F8423D0E6FA002BCA1C /* AppDelegate.swift */,
 				DDB38F8623D0E6FA002BCA1C /* ViewController.swift */,
-				DDB38F8823D0E6FB002BCA1C /* Assets.xcassets */,
+				DDB38FB423D112E0002BCA1C /* SecondController.swift */,
 				DDB38F8A23D0E6FB002BCA1C /* Main.storyboard */,
-				DDB38F8D23D0E6FB002BCA1C /* Info.plist */,
 				DDB38F8E23D0E6FB002BCA1C /* InventoryManagerRoughDraft.entitlements */,
+				DDB38F8823D0E6FB002BCA1C /* Assets.xcassets */,
+				DDB38F8D23D0E6FB002BCA1C /* Info.plist */,
 			);
 			path = InventoryManagerRoughDraft;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB38FB523D112E0002BCA1C /* SecondController.swift in Sources */,
 				DDB38F8723D0E6FA002BCA1C /* ViewController.swift in Sources */,
 				DDB38F8523D0E6FA002BCA1C /* AppDelegate.swift in Sources */,
 			);
