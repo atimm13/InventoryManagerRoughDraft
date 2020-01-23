@@ -15,9 +15,11 @@ class ViewController: NSViewController {
 
     var sortBy: String = "number"
     var searchContents: String = ""
+
     
     
-    
+   
+    @IBOutlet weak var searchField: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +28,6 @@ class ViewController: NSViewController {
         
         
         
-        
-      
     }
 
     override var representedObject: Any? {
@@ -37,8 +37,8 @@ class ViewController: NSViewController {
     }
     
     @IBAction func search(_ sender: Any) {
+        searchContents = searchField.stringValue
         print("\(searchContents)")
-        
         
     }
     
