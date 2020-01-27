@@ -24,6 +24,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        tableView.delegate = self
+//        tableView.dataSource = self
         sort()
         
         
@@ -85,4 +87,15 @@ class ViewController: NSViewController {
     
     
 }
+
+
+
+//extension ViewController: NSTableViewDataSource {
+//     func numberOfRows(in tableView: NSTableView) -> Int {
+//            return viewModel.purchases.count
+//        }
+//    }
+// extension ViewController: NSTableViewDelegate {
+//
+// }
 

@@ -717,14 +717,15 @@
                                     <rect key="frame" x="1" y="0.0" width="758" height="418"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Pao-84-M10" viewBased="YES" id="Cic-Eb-JRh">
-                                            <rect key="frame" x="0.0" y="0.0" width="760.5" height="393"/>
+                                        <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Pao-84-M10" viewBased="YES" id="Cic-Eb-JRh">
+                                            <rect key="frame" x="0.0" y="0.0" width="758" height="393"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <tableViewGridLines key="gridStyleMask" vertical="YES" dashed="YES"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="59" minWidth="40" maxWidth="1000" id="G6Q-I1-afj">
+                                                <tableColumn identifier="ISBNcolumn" width="59" minWidth="40" maxWidth="1000" id="G6Q-I1-afj">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="ISBN">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -735,6 +736,7 @@
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
+                                                    <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="ISBN"/>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="Jdr-4I-SwC">
@@ -757,7 +759,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="197" minWidth="10" maxWidth="3.4028234663852886e+38" id="twg-zH-QVL">
+                                                <tableColumn identifier="TitleColumn" width="197" minWidth="10" maxWidth="3.4028234663852886e+38" id="twg-zH-QVL">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Title">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -784,13 +786,10 @@
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
-                                                            <connections>
-                                                                <outlet property="textField" destination="GD2-ve-qex" id="j11-b2-nt9"/>
-                                                            </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="131" minWidth="10" maxWidth="3.4028234663852886e+38" id="Gw0-pe-KZn">
+                                                <tableColumn identifier="AuthorColumn" width="131" minWidth="10" maxWidth="3.4028234663852886e+38" id="Gw0-pe-KZn">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Author">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -823,7 +822,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="58" minWidth="10" maxWidth="3.4028234663852886e+38" id="aJ9-IM-Wcp">
+                                                <tableColumn identifier="QuantityColumn" width="58" minWidth="10" maxWidth="3.4028234663852886e+38" id="aJ9-IM-Wcp">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Quantity">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -856,7 +855,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="300.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="N38-SS-Igr">
+                                                <tableColumn width="298" minWidth="10" maxWidth="3.4028234663852886e+38" id="N38-SS-Igr">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Price">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -870,11 +869,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="Fzg-Ni-GDB">
-                                                            <rect key="frame" x="458" y="1" width="301" height="17"/>
+                                                            <rect key="frame" x="458" y="1" width="298" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dF8-sF-qvb">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="301" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="298" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="ZAM-Lq-vzm">
                                                                         <font key="font" metaFont="system"/>
@@ -894,7 +893,7 @@
                                     </subviews>
                                     <nil key="backgroundColor"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="79R-jY-YQy">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="79R-jY-YQy">
                                     <rect key="frame" x="1" y="402" width="758" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -903,7 +902,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="Pao-84-M10">
-                                    <rect key="frame" x="0.0" y="0.0" width="760.5" height="25"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="758" height="25"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>

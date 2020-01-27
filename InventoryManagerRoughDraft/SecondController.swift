@@ -39,7 +39,7 @@ class SecondController: NSViewController {
         print("\(Quantity)")
         Price = priceTextField.stringValue
         print("\(Price)")
-        print("hellO")
+        
     }
     
     

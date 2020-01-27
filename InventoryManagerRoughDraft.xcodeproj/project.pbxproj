@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A645BD923DF4F4500CB4DEC /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A645BD823DF4F4500CB4DEC /* Books.json */; };
 		DDB38F8523D0E6FA002BCA1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB38F8423D0E6FA002BCA1C /* AppDelegate.swift */; };
 		DDB38F8723D0E6FA002BCA1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB38F8623D0E6FA002BCA1C /* ViewController.swift */; };
 		DDB38F8923D0E6FB002BCA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB38F8823D0E6FB002BCA1C /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A645BD823DF4F4500CB4DEC /* Books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
 		DDB38F8123D0E6FA002BCA1C /* InventoryManagerRoughDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryManagerRoughDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB38F8423D0E6FA002BCA1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB38F8623D0E6FA002BCA1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				DDB38F8423D0E6FA002BCA1C /* AppDelegate.swift */,
 				DDB38F8623D0E6FA002BCA1C /* ViewController.swift */,
+				5A645BD823DF4F4500CB4DEC /* Books.json */,
 				DDB38FB423D112E0002BCA1C /* SecondController.swift */,
 				DDB38F8A23D0E6FB002BCA1C /* Main.storyboard */,
 				DDB38F8E23D0E6FB002BCA1C /* InventoryManagerRoughDraft.entitlements */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A645BD923DF4F4500CB4DEC /* Books.json in Resources */,
 				DDB38F8923D0E6FB002BCA1C /* Assets.xcassets in Resources */,
 				DDB38F8C23D0E6FB002BCA1C /* Main.storyboard in Resources */,
 			);
