@@ -10,20 +10,55 @@ import Cocoa
 
 
 class SecondController: NSViewController {
+    
+    var ISBN: String = ""
+    var Title: String = ""
+    var Author: String = ""
+    var Quantity: String = ""
+    var Price: String = ""
+    
 
     required init(coder: NSCoder){
         
         super.init(coder: coder)!
-        addBook()
+     
+    
+    }
+    @IBAction func cancel(_ sender: Any) {
+         self.dismiss(self)
+    }
+    
+    @IBAction func AddButton(_ sender: Any) {
+        ISBN = ISBNTextField.stringValue
+        print("\(ISBN)")
+        Title = titleTextField.stringValue
+        print("\(Title)")
+        Author = authorTextField.stringValue
+        print("\(Author)")
+        Quantity = quantityTextField.stringValue
+        print("\(Quantity)")
+        Price = priceTextField.stringValue
+        print("\(Price)")
     }
     
     
-    func addBook(){
-        print("add book")
-    }
+    @IBOutlet weak var ISBNTextField: NSTextField!
     
-    @IBAction func dismiss(_ sender: Any) {
-        self.dismiss(self)
-    }
+   
+    
+    @IBOutlet weak var titleTextField: NSTextField!
+    
+    
+    
+    @IBOutlet weak var authorTextField: NSTextField!
+    
+    
+    
+    @IBOutlet weak var quantityTextField: NSTextField!
+    
+    
+    
+    @IBOutlet weak var priceTextField: NSTextField!
+    
     
 }
