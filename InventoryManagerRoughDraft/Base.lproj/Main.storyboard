@@ -750,7 +750,13 @@
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                        <connections>
+                                                                            <binding destination="Jdr-4I-SwC" name="value" keyPath="objectValue" id="H54-bX-xQK"/>
+                                                                        </connections>
                                                                     </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="Jdr-4I-SwC" name="value" keyPath="objectValue" id="evi-lI-zAV"/>
+                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
@@ -758,6 +764,9 @@
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
+                                                    <connections>
+                                                        <binding destination="XfG-lQ-9wD" name="value" keyPath="self.isbn" id="mWb-8L-gq8"/>
+                                                    </connections>
                                                 </tableColumn>
                                                 <tableColumn identifier="TitleColumn" width="197" minWidth="10" maxWidth="3.4028234663852886e+38" id="twg-zH-QVL">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Title">
@@ -784,6 +793,9 @@
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="yjb-Ft-2eS" name="value" keyPath="objectValue" id="rcz-iB-Ut1"/>
+                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                         </tableCellView>
@@ -889,6 +901,9 @@
                                                     </prototypeCellViews>
                                                 </tableColumn>
                                             </tableColumns>
+                                            <connections>
+                                                <binding destination="bpx-xV-hsC" name="content" keyPath="arrangedObjects" id="bpp-hJ-iye"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                     <nil key="backgroundColor"/>
@@ -998,10 +1013,16 @@
                     </view>
                     <connections>
                         <outlet property="searchField" destination="Rck-oP-m5n" id="duI-NI-uXJ"/>
-                        <outlet property="tableView" destination="9ue-Sf-vBx" id="MrY-52-xlU"/>
+                        <outlet property="tableView" destination="Cic-Eb-JRh" id="qcf-sk-BEq"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="A3N-Ja-LC0"/>
+                <arrayController id="bpx-xV-hsC">
+                    <connections>
+                        <binding destination="XfG-lQ-9wD" name="contentArray" keyPath="books" id="aWL-uw-RQ8"/>
+                    </connections>
+                </arrayController>
             </objects>
             <point key="canvasLocation" x="75" y="990"/>
         </scene>
